@@ -6,9 +6,18 @@
     preotected $Phn;
     protected $Full_name;
 
-    function _construct(){
-    
-  
+    function _construct($no,$PHN,$fn){
+      $this->UID = $no;
+      $this->Phn = $PHN;
+      $this->Full_name = $fn;
+    }  
+    function Greeting(){
+      #checking if not empty
+      if(!empty($this->UID) || !empty($this->Phn) || !empty($this->Full_name)){
+      echo "Hello! My Name is"." ".$this->Full_name." "."My Phone No: ".$this->Phn;
+      }
+    }
   }
-
+$runClass = new Myprac('1','222222222','MBL');
+$runClass->Greeting();
 ?>
