@@ -1,0 +1,14 @@
+<?php 
+
+  #--------------------------------General Classs Below-------------------------------#
+  Class Myprac{
+    protected $UID;
+    preotected $Phn;
+    protected $Full_name;
+
+    function _construct(){
+    
+  
+  }
+
+?>
